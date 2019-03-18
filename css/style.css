@@ -14,7 +14,7 @@ a{
 	width: 535px;
 	height: 535px;
 	margin: 50px auto 20px;
-	background: url(../images/board.jpg) no-repeat;
+	background: url(../board.jpg) no-repeat;
 }
 .box>.info{
 	width: 100%;
