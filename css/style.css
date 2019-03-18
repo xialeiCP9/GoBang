@@ -1,0 +1,84 @@
+body{
+	padding: 0;
+	margin: 0;
+	min-width: 600px;
+}
+a{
+	text-decoration: none;
+}
+.box{
+	width: 100%;
+}
+.box>.chess{
+	position: relative;
+	width: 535px;
+	height: 535px;
+	margin: 50px auto 20px;
+	background: url(../images/board.jpg) no-repeat;
+}
+.box>.info{
+	width: 100%;
+	margin-top:20px; 
+}
+.box>.info>.tip{
+	width: 100%;
+	text-align: center;
+}
+.box>.info>.tip>span{
+	background: #ccc;
+	padding: 10px 20px;
+	border-radius: 10px; 
+}
+.box>.info>.btn{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 20px;
+}
+.box>.info>.btn>div{
+	float: left;
+	width: 130px;
+	height: 50px;
+	margin: 0 10px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 15px;
+}
+.box>.info>.btn>.btnStart{
+	background: green;
+}
+.box>.info>.btn>.btnGive{
+	background: red;
+}
+.box>.info>.btn>.btnStart>a,.box>.info>.btn>.btnGive>a{
+	padding: 10px 40px;
+	color: #fff;
+}
+.box>.info>.btn>.btnBack,.box>.info>.btn>.btnForward{
+	border:1px solid #000;
+}
+.box>.info>.btn>.btnBack>a,.box>.info>.btn>.btnForward>a{
+	padding: 10px 40px;
+	color: rgba(0,0,0,1);
+}
+/* 按钮不能点击时 */
+.disabled{
+	opacity: 0.2;
+}
+
+/* MASK */
+.mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height:auto;
+	text-align: center;
+	color: red;
+	font-size: 200px;
+	opacity: 1;
+	padding-top:300px;
+	z-index: 100;
+}
+
